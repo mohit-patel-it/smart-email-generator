@@ -1,0 +1,7 @@
+########################################JAVA SCRIPT#############################
+
+
+
+
+1. Typeof(null)= Object
+2. typeof(undefined)= Undefined
