@@ -11,7 +11,7 @@ import java.util.Map;
 
 @Service
 public class EmailGeneratorService {
-
+//https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent
     private final WebClient webClient;
 
     @Value("${gemini.api.url}")
