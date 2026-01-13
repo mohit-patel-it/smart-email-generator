@@ -38,7 +38,7 @@ public class EmailGeneratorService {
                         )
                 )
         );
-
+//        here thsi is structure of my REST API
         String response = webClient.post()
                 .uri(geminiApiUrl + "?key=" + geminiApiKey)
                 .header("Content-Type", "application/json")
@@ -52,6 +52,7 @@ public class EmailGeneratorService {
 
     private String extractResponseContent(String response) {
         try {
+//            Here we can used Object Mapper they used in JSON data in extract form of Objects
             ObjectMapper mapper = new ObjectMapper();
             JsonNode rootNode = mapper.readTree(response);
 
