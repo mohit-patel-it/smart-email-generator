@@ -135,6 +135,27 @@ Backend generates reply
 
 Extension inserts reply into Gmail compose box
 
+## 📸 Application Screenshots
+
+### 🌐 Email Generator – React Web Application
+
+#### 🔹 Before (Manual Email Writing)
+![Before Email Generation](photos/before-generate.png)
+
+#### 🔹 After (AI Generated Email)
+![After Email Generation](photos/after-generate.png)
+
+---
+
+### 🧩 Gmail Chrome Extension – AI Reply Generator
+
+#### 🔹 Before (Default Gmail Interface)
+![Before Gmail Extension](photos/before-extension.png)
+
+#### 🔹 After (AI Reply Button & Generated Reply)
+![After Gmail Extension](photos/after-extension.png)
+
+
 🛠️ Tech Stack
 Frontend
 React.js
