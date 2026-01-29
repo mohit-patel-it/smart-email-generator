@@ -19,25 +19,30 @@ Both the **React web app** and the **Chrome Extension** use the **same Spring Bo
 
 ## 🧩 System Architecture
 
+Both the React web application and the Chrome Extension use the same
+Spring Boot backend APIs, ensuring code reuse, consistency, and scalability.
+
+```text
 smart-email-generator/
 │
 ├── backend-spring-boot/
-│ ├── controllers/
-│ ├── services/
-│ ├── models/
-│ └── REST APIs
+│   ├── controllers/
+│   ├── services/
+│   ├── models/
+│   └── REST APIs
 │
 ├── frontend-react/
-│ ├── components/
-│ ├── pages/
-│ └── UI for email generation
+│   ├── components/
+│   ├── pages/
+│   └── UI for email generation
 │
 ├── chrome-extension/
-│ ├── content-script.js
-│ ├── popup.html
-│ └── Gmail reply integration
+│   ├── content-script.js
+│   ├── popup.html
+│   └── Gmail reply integration
 │
 └── README.md
+
 
 ---
 
