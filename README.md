@@ -146,31 +146,36 @@ Extension inserts reply into Gmail compose box
 
 
 
-🛠️ Tech Stack
-Frontend
-React.js
+## 🛠️ Tech Stack
 
-JavaScript (ES6+)
+### 🌐 Frontend (React Web Application)
+| Technology | Purpose |
+|-----------|---------|
+| React.js | Building dynamic UI components |
+| JavaScript (ES6+) | Client-side logic |
+| HTML5 | Page structure |
+| CSS3 | Styling and responsive design |
 
-HTML5, CSS3
+---
 
-Chrome Extension
-JavaScript
+### 🧩 Chrome Extension (Gmail AI Reply)
+| Technology | Purpose |
+|-----------|---------|
+| JavaScript | Extension logic |
+| Chrome Extension APIs | Browser integration |
+| Content Scripts | Injecting AI button into Gmail |
+| DOM Manipulation | Reading and updating Gmail UI |
 
-Chrome Extension APIs
+---
 
-Content Scripts
+### ⚙️ Backend (Spring Boot)
+| Technology | Purpose |
+|-----------|---------|
+| Java | Core backend development |
+| Spring Boot | REST API development |
+| REST APIs | Communication between clients |
+| Maven | Dependency management & build tool |
 
-DOM Manipulation
-
-Backend
-Java
-
-Spring Boot
-
-REST APIs
-
-Maven
 
 🔮 Future Enhancements
 AI model integration (OpenAI / LLMs)
