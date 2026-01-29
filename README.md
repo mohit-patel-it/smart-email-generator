@@ -47,6 +47,7 @@ smart-email-generator/
 │   └── gmail-after.png
 │
 └── README.md
+```
 ✨ Key Features
 🌐 React Web Application
 Generate professional email content
