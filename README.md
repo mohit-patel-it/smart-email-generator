@@ -1,26 +1,25 @@
-# ✉️ Smart Email Generator
+# ✉️ Smart Email Generator & Gmail AI Reply Extension
 
-A **full-stack Smart Email Generator system** built using **Spring Boot (Backend)**,  
-**React (Frontend)**, and a **Chrome Extension (Gmail Reply Generator)**.
+A **full-stack, production-style Smart Email Generator system** built using  
+**Spring Boot (Backend)**, **React (Frontend)**, and a **Chrome Extension** that injects an **AI Reply button directly into Gmail**.
 
-This project demonstrates a **real-world, production-style architecture** where a **single backend** serves **multiple clients** — a web application and a browser extension — similar to modern SaaS products.
+The project demonstrates a **real-world SaaS-style architecture** where a **single backend** serves **multiple clients**:
+- A React web application for email generation
+- A Chrome Extension for smart Gmail replies
 
 ---
 
-## 📌 Project Description
+## 📌 Project Overview
 
 Smart Email Generator helps users:
-- Generate professional email content via a web interface
-- Generate smart replies directly inside Gmail using a Chrome extension
+- Generate professional emails using a React web application
+- Generate AI-powered replies directly inside Gmail using a Chrome Extension
 
-Both the **React web app** and the **Chrome Extension** use the **same Spring Boot backend APIs**, ensuring **code reuse, consistency, and scalability**.
+Both the **React app** and the **Chrome Extension** communicate with the **same Spring Boot backend APIs**, ensuring **code reuse, consistency, and scalability**.
 
 ---
 
 ## 🧩 System Architecture
-
-Both the React web application and the Chrome Extension use the same
-Spring Boot backend APIs, ensuring code reuse, consistency, and scalability.
 
 ```text
 smart-email-generator/
@@ -34,74 +33,145 @@ smart-email-generator/
 ├── frontend-react/
 │   ├── components/
 │   ├── pages/
-│   └── UI for email generation
+│   └── Email Generator UI
 │
 ├── chrome-extension/
 │   ├── content-script.js
 │   ├── popup.html
-│   └── Gmail reply integration
+│   └── Gmail AI Reply Button
+│
+├── screenshots/
+│   ├── web-before.png
+│   ├── web-after.png
+│   ├── gmail-before.png
+│   └── gmail-after.png
 │
 └── README.md
-```
+✨ Key Features
+🌐 React Web Application
+Generate professional email content
 
----
+Select tone (Formal / Professional / Casual)
 
-## ✨ Key Features
+Clean and responsive UI
 
-### 🌐 React Web Application
-- Generate professional email content
-- Select email tone (Formal / Professional / Casual)
-- Clean and responsive UI
-- Copy and reuse generated emails
+Copy generated email content
 
-### 🧩 Chrome Extension (Gmail Reply Generator)
-- Works directly inside Gmail
-- Generates smart replies for received emails
-- Uses same backend APIs as web app
-- Improves email productivity
+🧩 Chrome Extension – Gmail AI Reply Generator
+Injects an AI Reply button directly into Gmail
 
-### ⚙️ Spring Boot Backend
-- RESTful API design
-- Centralized email generation logic
-- Shared services for web & extension
-- Scalable and maintainable architecture
+Extracts email content from Gmail
 
----
+Sends content to Spring Boot backend
 
-## 🛠️ Tech Stack
+Inserts AI-generated reply into Gmail compose box
 
-### Frontend
-- React.js
-- JavaScript (ES6+)
-- HTML5, CSS3
-- Chrome Extension APIs
+⚙️ Spring Boot Backend
+RESTful API design
 
-### Backend
-- Java
-- Spring Boot
-- REST APIs
-- Maven
+Centralized email generation logic
 
-### Tools & Platforms
-- Git & GitHub
-- Postman
-- Chrome Developer Tools
+Shared backend for web app & extension
 
----
+Scalable and maintainable architecture
 
-## 🔗 API Reusability (Core Concept)
+📸 Application Screenshots
+🌐 Email Generator – React Web App
+🔹 Before (Empty / Manual Email Writing)
 
-Both **React frontend** and **Chrome Extension** consume the **same backend APIs**.
+🔹 After (AI Generated Email)
 
-✔ No duplicate business logic  
-✔ Single source of truth  
-✔ Easy maintenance  
-✔ Industry-grade backend design  
+🧩 Gmail Chrome Extension – AI Reply Button
+🔹 Before (Normal Gmail Interface)
 
----
+🔹 After (AI Reply Button & Generated Reply)
 
-## ⚙️ Installation & Setup
+🔗 Shared Backend Design (Important Highlight)
+Both the React web application and the Gmail Chrome Extension use the same Spring Boot backend APIs.
 
-### 1️⃣ Clone Repository
-```bash
-git clone https://github.com/mohit-patel-it/smart-email-generator.git
+React Web App ─────▶ Spring Boot REST API ─────▶ Email Generator Logic
+Gmail Extension ───▶ Spring Boot REST API ─────▶ Same Logic
+✔ No duplicate business logic
+✔ Single source of truth
+✔ Easy maintenance and scalability
+
+⚙️ Installation & Setup Guide
+1️⃣ Clone Repository
+git clone https://github.com/USERNAME/smart-email-generator.git
+2️⃣ Backend Setup (Spring Boot)
+cd backend-spring-boot
+mvn clean install
+mvn spring-boot:run
+Backend runs on:
+
+http://localhost:8080
+3️⃣ Frontend Setup (React)
+cd frontend-react
+npm install
+npm start
+Frontend runs on:
+
+http://localhost:3000
+4️⃣ Chrome Extension Setup
+Open Chrome → chrome://extensions
+
+Enable Developer Mode
+
+Click Load Unpacked
+
+Select chrome-extension/ folder
+
+Open Gmail and use the AI Reply button
+
+🧠 Technical Flow (Interview Ready)
+User opens Gmail and clicks the AI Reply button
+
+Chrome Extension extracts email content from Gmail DOM
+
+Sends content to Spring Boot REST API
+
+Backend generates reply
+
+Extension inserts reply into Gmail compose box
+
+🛠️ Tech Stack
+Frontend
+React.js
+
+JavaScript (ES6+)
+
+HTML5, CSS3
+
+Chrome Extension
+JavaScript
+
+Chrome Extension APIs
+
+Content Scripts
+
+DOM Manipulation
+
+Backend
+Java
+
+Spring Boot
+
+REST APIs
+
+Maven
+
+🔮 Future Enhancements
+AI model integration (OpenAI / LLMs)
+
+User authentication & email history
+
+Tone & language selection
+
+OAuth integration with Gmail
+
+Cloud deployment (AWS / Render)
+
+👨‍💻 Author
+Mohit Patel
+Java Full Stack Developer
+🔗 LinkedIn: https://www.linkedin.com/in/mohit-patel-5b10532b3
