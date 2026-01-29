@@ -76,17 +76,6 @@ Shared backend for web app & extension
 
 Scalable and maintainable architecture
 
-📸 Application Screenshots
-🌐 Email Generator – React Web App
-🔹 Before (Empty / Manual Email Writing)
-
-🔹 After (AI Generated Email)
-
-🧩 Gmail Chrome Extension – AI Reply Button
-🔹 Before (Normal Gmail Interface)
-
-🔹 After (AI Reply Button & Generated Reply)
-
 🔗 Shared Backend Design (Important Highlight)
 Both the React web application and the Gmail Chrome Extension use the same Spring Boot backend APIs.
 
@@ -137,23 +126,24 @@ Extension inserts reply into Gmail compose box
 
 ## 📸 Application Screenshots
 
-### 🌐 Email Generator – React Web Application
+## 🌐 Email Generator – React Web Application
 
-#### 🔹 Before (Manual Email Writing)
-![Before Email Generation](photos/before-generate.png)
+### 🔹 Before (Manual Email Writing)
+![Before Email Generation](Build%20Smart%20Email%20Assistant/photos/before-generate.png)
 
-#### 🔹 After (AI Generated Email)
-![After Email Generation](photos/after-generate.png)
+### 🔹 After (AI Generated Email)
+![After Email Generation](Build%20Smart%20Email%20Assistant/photos/after-generate.png)
 
 ---
 
-### 🧩 Gmail Chrome Extension – AI Reply Generator
+## 🧩 Gmail Chrome Extension – AI Reply Generator
 
-#### 🔹 Before (Default Gmail Interface)
-![Before Gmail Extension](photos/before-extension.png)
+### 🔹 Before (Default Gmail Interface)
+![Before Gmail Extension](Build%20Smart%20Email%20Assistant/photos/before-extension.png)
 
-#### 🔹 After (AI Reply Button & Generated Reply)
-![After Gmail Extension](photos/after-extension.png)
+### 🔹 After (AI Reply Button & Generated Reply)
+![After Gmail Extension](Build%20Smart%20Email%20Assistant/photos/after-extension.png)
+
 
 
 🛠️ Tech Stack
