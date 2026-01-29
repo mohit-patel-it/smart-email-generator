@@ -42,7 +42,7 @@ smart-email-generator/
 │   └── Gmail reply integration
 │
 └── README.md
-
+```
 
 ---
 
